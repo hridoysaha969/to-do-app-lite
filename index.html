@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do Application</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+    <!-- Navigation and Search Filter -->
+    <header>
+        <nav>
+            <div class="navigation">
+                <div class="logo">
+                    <h3><a href="#">Tasko</a></h3>
+                </div>
+                <div class="search__field">
+                    <input type="text" id="searchTxt" placeholder="Search">
+                    <button class="btn" type="button">Search</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="display">
+            <div class="container">
+                <div class="heading">
+                    <h3><span id="total-task">0</span> Task(s) pending</h3>
+                </div>
+
+                <!-- Display Task Data Dynamically -->
+                <div class="all__tasks" id="task-container">
+                </div>
+            </div>
+        </section>
+
+        <!-- Add Task Button -->
+        <div class="add__task" id="add-btn">
+            <button title="Add Task">+</button>
+        </div>
+
+        <!-- Task Form popup page -->
+        <div class="task__form" id="task-form">
+            <span class="times__icon" id="times-icon">&times;</span>
+            <form action="#" id="form">
+                <input type="text" class="common" id="title" placeholder="Add title">
+                <input type="date" class="common" id="date">
+                <input type="time" class="common" id="time">
+                <input type="submit" value="Add task" class="common add-task" id="add-task">
+            </form>
+        </div>
+    </main>
+
+    <!-- JS Files -->
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
+
+<!-- All the rights reserved Coder's Hridoy -->
+<!-- Google: Coder's Hridoy -->
+<!-- Facebook: Coder's Hridoy -->
+<!-- Twitter: Coder's Hridoy -->
+<!-- Website: https://codershridoy.com -->
